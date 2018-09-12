@@ -1,0 +1,56 @@
+
+@import "./variable.scss";
+
+@mixin fullScreen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin shadowTop {
+    box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, .1)
+}
+
+@mixin shadowBottom {
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, .1)
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin border {
+    background-image: linear-gradient(180deg, $color-border, $color-border 50%, transparent 0);
+    background-size: 120% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-origin: content-box;
+}
+
+@mixin border-bottom {
+    @include border;
+    background-image: linear-gradient(0deg, $color-border, $color-border 50%, transparent 0);
+    background-origin: border-box;
+    background-position: bottom;
+}
+
+@mixin border-top {
+    @include border;
+    background-origin: border-box;
+}
+
+@mixin textOverflow {
+    white-space: nowrap;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+};
+
+@mixin textBreak {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}

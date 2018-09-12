@@ -1,0 +1,30 @@
+
+@import "./variable.scss";
+
+.sign {
+    padding: 10px 0;
+
+    .action {
+        padding: 20px;
+
+        .agree {
+            margin-bottom: 15px;
+
+            .agree-action {
+                color: $color-gray;
+            }
+        }
+        .forget {
+            margin-top: 15px;
+            float: right;
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+
+    .field-error {
+        font-size: $font-size-s;
+        color: $color-danger;
+    }
+
+}
