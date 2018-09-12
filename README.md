@@ -14,7 +14,7 @@
 * `VeeValidate`: 自定义开发前端所需的验证,灵活、可制定
 * `axios`: 用于浏览器和 node.js 的基于 Promise 的 HTTP 客户端 。
 
-#### 安装教程
+#### 安装
 
 ```bash
 # install dependencies
