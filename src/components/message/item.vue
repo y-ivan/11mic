@@ -1,6 +1,5 @@
 <template>
     <mt-cell-swipe
-        :right="swipeConfig"
     >
         <div class="item">
             <div class="info" v-if="$route.name !== 'email'">
